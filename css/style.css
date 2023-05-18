@@ -1,0 +1,128 @@
+body {
+  background: url(../img/renga.png) repeat;
+  background-size: 20rem auto;
+  position: relative;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+
+main {
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+  min-height: 300px;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(249, 233, 213);
+}
+
+.title {
+  font-size: 36px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+li {
+  list-style: none;
+  margin-right: 5px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+button {
+  height: 35px;
+  cursor: pointer;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.qq {
+  width: 100%;
+  margin: 4px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  border: none;
+  background-color: rgb(43, 43, 217);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.qq:hover {
+  opacity: 0.6;
+}
+
+.yesno {
+font-size: 24px;
+font-weight: bold;
+color: red;
+font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+#question {
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.answer {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#count {
+  color: rgb(214, 47, 1);
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-size: 20px;
+}
+
+.repeat {
+  margin-top: 20px;
+}
+
+.repeat:hover {
+  opacity: 0.6;
+}
+
+.rebtn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.yura {
+  animation: horizontal 1s ease-in-out infinite alternate;
+}
+
+
+.yura img {
+  animation: vertical 1.3s ease-in-out infinite alternate;
+  width: 80px;
+}
+
+.yura:nth-child(1) { animation-duration: 1.9s}
+.yura:nth-child(2) { animation-duration: 1.7s}
+.yura:nth-child(3) { animation-duration: 3.5s}
+.yura:nth-child(4) { animation-duration: 1.5s}
+.yura:nth-child(5) { animation-duration: 1.4s}
+.yura:nth-child(6) { animation-duration: 3.2s}
+
+@keyframes horizontal {
+  0% { transform:translateX( -6px); }
+100% { transform:translateX(  10px); }
+}
+
+@keyframes vertical {
+  0% { transform:translateY(-10px); }
+100% { transform:translateY(  6px); }
+}

@@ -47,6 +47,9 @@ $(".check").on("click", function () {
   }
   $(".answer").show();
   $(".repeat").show();
+  $("html, body").animate(
+    { scrollTop: $("html").get(0).scrollHeight },
+);
 });
 
 // 質問は３回まで
@@ -56,6 +59,9 @@ $(".qq").on("click", function () {
   $("#count").html(cnt);
   if ((cnt === 0)) {
     $(".qq").prop("disabled", true);
+    $(".qq").css("color","gray");
+    $(".qq").css("cursor","default");
+    $(".qq").css("pointer-events","none");
   }
 });
 
